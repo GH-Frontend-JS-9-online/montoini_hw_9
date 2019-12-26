@@ -222,6 +222,25 @@ console.log(gameTamagotchi);
 	}, 7000)
 })();
 
+/*
+(function() {
+	let tamHelp = setTimeout(function () {
+	let randomInteger = ranInteger(0, 5);
+	let randomHelp = ranInteger(10, 50);
+    tamFood.innerHTML = gameTamagotchi.food;
+	tamClean.innerHTML = gameTamagotchi.clean;
+	tamHappiness.innerHTML = gameTamagotchi.happiness;
+	tamHealth.innerHTML = gameTamagotchi.health;
+	tamSocialization.innerHTML = gameTamagotchi.socialization;
+	tamMoney.innerHTML = gameTamagotchi.money;
+	for (let i = 0; i < tamHelp.length; i++) {
+		if(i == randomInteger) {
+			tamHelp = +tamHelp + randomHelp;
+		}
+	}
+	}, 1000 * 60);
+})();
+*/
 
 document.querySelector('#eat').addEventListener('click', function () {
 	gameTamagotchi.eat();
@@ -304,21 +323,5 @@ document.querySelector('#business').addEventListener('click', function () {
 	}
 });
 
-/*
-(function() {
-	setTimeout(function () {
-	let randomInteger = randInteger(0, 5);
-	let randomStat = randInteger(10, 50); 
-	gameTamagotchi.statisticsValue();
-	tamFood.innerHTML = gameTamagotchi.food;
-	tamClean.innerHTML = gameTamagotchi.clean;
-	tamHappiness.innerHTML = gameTamagotchi.happiness;
-	tamHealth.innerHTML = gameTamagotchi.health;
-	tamSocialization.innerHTML = gameTamagotchi.socialization;
-	tamMoney.innerHTML = gameTamagotchi.money;
-	for(let i = 0; i < randomStat.length; i++ ) {
-		if (gameTamagotchi.food == randomInteger || gameTamagotchi.clean == randomInteger || gameTamagotchi.happiness == randomInteger || gameTamagotchi.health == randomInteger || gameTamagotchi.socialization == randomInteger || gameTamagotchi.money == randomInteger) { 
-	}, 1000 * 60;
-}();
-*/
+
 
